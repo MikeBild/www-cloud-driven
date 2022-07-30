@@ -7,30 +7,34 @@
 	</div>
 	<div class="grid">
 		<article>
-			<hgroup>
-				<h5>SvelteKit und AWS</h5>
-				<h6>Einsatz und Nutzen des AWS Adapters für SvelteKit.</h6>
-			</hgroup>
-			<small>...</small>
-			<footer>
-				<div class="grid center">
-					<small>Mike Bild</small>
-					<small class="text-right">30.07.2022</small>
-				</div>
-			</footer>
+			<a href="/blog/sveltekit-und-aws" class="contrast">
+				<hgroup>
+					<h5>SvelteKit und AWS</h5>
+					<h6>Einsatz und Nutzen des AWS Adapters für SvelteKit.</h6>
+				</hgroup>
+				<small>...</small>
+				<footer>
+					<div class="grid center">
+						<small>Mike Bild</small>
+						<small class="text-right">30.07.2022</small>
+					</div>
+				</footer>
+			</a>
 		</article>
 		<article>
-			<hgroup>
-				<h5>Terraform NodeJs Provider</h5>
-				<h6>Einsatz und Nutzen des Terraform NodeJS Providers.</h6>
-			</hgroup>
-			<small>...</small>
-			<footer>
-				<div class="grid center">
-					<small>Sebastian Korfmann</small>
-					<small class="text-right">19.06.2022</small>
-				</div>
-			</footer>
+			<a href="/blog/terraform-nodejs-provider" class="contrast">
+				<hgroup>
+					<h5>Terraform NodeJs Provider</h5>
+					<h6>Einsatz und Nutzen des Terraform NodeJS Providers.</h6>
+				</hgroup>
+				<small>...</small>
+				<footer>
+					<div class="grid center">
+						<small>Sebastian Korfmann</small>
+						<small class="text-right">19.06.2022</small>
+					</div>
+				</footer>
+			<a/>
 		</article>
 	</div>
 </section>

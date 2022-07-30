@@ -6,7 +6,7 @@
 <Hero />
 
 <main class="container">
-	<div class="grid">
+	<div class="grid layout">
 		<div>
 			<section>
 				<h2>Cloud Driven Engineering</h2>
@@ -22,6 +22,28 @@
 			</section>
 			<section>
 				<h2>Gründer und Team</h2>
+				<div class="grid">
+					<article>
+						<figure>
+							<h3>Sebastian Korfmann</h3>
+							<img alt="avatar" src="sebastian-korfmann.jpg" />
+							<figcaption>
+								<p>CEO & Founder</p>
+								<small>CDK for Terraform @ HashiCorp</small>
+							</figcaption>
+						</figure>
+					</article>
+					<article>
+						<figure>
+							<h3>Mike Bild</h3>
+							<img alt="avatar" src="mike-bild.jpg" />
+							<figcaption>
+								<p>Co-Founder</p>
+								<small>Cloud and Software Engineer</small>
+							</figcaption>
+						</figure>
+					</article>
+				</div>
 			</section>
 
 			<section>
@@ -47,3 +69,10 @@
 		<p>Indem Sie sich anmelden, stimmen Sie den Nutzungsbedingungen und der Datenschutzrichtlinie zu.</p>
 	</div>
 </section>
+
+<style>
+	img {
+		filter: grayscale(100%);
+		border: 2px solid black;
+	}
+</style>

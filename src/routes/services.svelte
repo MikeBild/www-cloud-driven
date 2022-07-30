@@ -3,7 +3,7 @@
 </script>
 
 <main class="container">
-	<div class="grid">
+	<div class="grid layout">
 		<div>
 			<section>
 				<hgroup>

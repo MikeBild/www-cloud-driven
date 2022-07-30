@@ -45,7 +45,7 @@ summary[role='link'].contrast:is([aria-current], :hover, :active, :focus) {
 
 /* Main */
 @media (min-width: 992px) {
-	main .grid {
+	main .layout {
 		grid-column-gap: var(--spacing-company);
 		grid-template-columns: auto 25%;
 	}

@@ -3,8 +3,8 @@
 </script>
 
 <main class="container">
-	<div class="grid" id="contact">
-		<section id="contact" aria-label="Contact us">
+	<div class="grid layout">
+		<section aria-label="Contact us">
 			<div class="container">
 				<hgroup>
 					<h2>Kontakt</h2>

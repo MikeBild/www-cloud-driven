@@ -14,18 +14,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 16.x
       uses: actions/setup-node@v3
       with:
         node-version: '16.x'
         cache: 'yarn'      
     - run: yarn
-    - run: npx cdk bootstrap aws://044086961882/eu-central-1 --force
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        CDK_DEFAULT_REGION: eu-central-1
-        CDK_DEFAULT_ACCOUNT: 044086961882
     - run: yarn build
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

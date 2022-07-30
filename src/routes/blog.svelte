@@ -47,4 +47,7 @@
 	.text-right {
 		text-align: right;
 	}
+	a {
+		text-decoration: none;
+	}
 </style>

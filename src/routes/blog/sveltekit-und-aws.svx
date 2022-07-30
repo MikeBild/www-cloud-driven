@@ -1,7 +1,10 @@
 ---
 title: SvelteKit und AWS
-description: 
+description: Einsatz und Nutzen des AWS Adapters für SvelteKit
+author: Mike Bild
+publishedAt: 30.07.2022
 layout: misc
 ---
 
 ## {title}
+### {description} von {author} am {publishedAt}

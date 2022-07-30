@@ -1,7 +1,10 @@
 ---
 title: Terraform NodeJs Provider
-description: 
+description: Einsatz und Nutzen des Terraform NodeJS Providers
+author: Sebastian Korfmann
+publishedAt: 19.06.2022
 layout: misc
 ---
 
 ## {title}
+### {description} von {author} am {publishedAt}

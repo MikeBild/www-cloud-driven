@@ -20,6 +20,7 @@ jobs:
         node-version: '16.x'
         cache: 'yarn'      
     - run: yarn
+    - run: npx cdk bootstrap aws://044086961882/eu-central-1 --force
     - run: yarn build
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

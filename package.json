@@ -1,0 +1,38 @@
+{
+	"name": "www",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"test": "playwright test",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"destroy": "destroy"
+	},
+	"devDependencies": {
+		"@picocss/pico": "1.5.3",
+		"@playwright/test": "1.24.2",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@typescript-eslint/eslint-plugin": "5.31.0",
+		"@typescript-eslint/parser": "5.31.0",
+		"eslint": "8.20.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-svelte3": "4.0.0",
+		"prettier": "2.7.1",
+		"prettier-plugin-svelte": "2.7.0",
+		"svelte": "3.49.0",
+		"svelte-check": "2.8.0",
+		"svelte-preprocess": "4.10.7",
+		"sveltekit-adapter-aws": "2.4.8",
+		"tslib": "2.4.0",
+		"typescript": "4.7.4",
+		"vite": "3.0.4"
+	},
+	"type": "module"
+}

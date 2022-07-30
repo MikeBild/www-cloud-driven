@@ -1,8 +1,8 @@
 <section class="container">
 	<div>
 		<hgroup>
-			<h2>Meet the Speaker</h2>
-			<h3>Hier veröffentlichen wir Artikel, Tutorials und Neuigkeiten.</h3>
+			<h2>Meet us</h2>
+			<h3>Konferenzen auf denen wir sprechen und Fachartikel die wir veröffentlichen.</h3>
 		</hgroup>
 	</div>
 	<div class="grid">

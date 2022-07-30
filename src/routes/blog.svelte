@@ -34,7 +34,7 @@
 						<small class="text-right">19.06.2022</small>
 					</div>
 				</footer>
-			<a/>
+			</a>
 		</article>
 	</div>
 </section>

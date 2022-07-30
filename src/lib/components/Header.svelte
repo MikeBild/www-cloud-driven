@@ -6,22 +6,17 @@
 	</ul>
 	<ul>
 		<li>
-			<a href="/#offer" class="contrast">Unser Angebot</a>
-		</li>
-		<li>
-			<a href="/blog" class="contrast">Blog</a>
-		</li>
-		<li>
-			<a href="/jobs" class="contrast">Jobs</a>
+			<a href="/services" class="contrast">Unser Angebot</a>
 		</li>
 		<li>
 			<a href="/contact" class="contrast">Kontakt</a>
 		</li>
 		<li>
 			<details role="list" dir="rtl">
-				<summary aria-haspopup="listbox" role="link" class="contrast">Open Source</summary>
+				<summary aria-haspopup="listbox" role="link" class="contrast">Hands-On</summary>
 				<ul role="listbox">
 					<li><a href="https://github.com/gusto-run" target="_blank">Gusto</a></li>
+					<li><a href="https://github.com/MikeBild/sveltekit-adapter-aws" target="_blank">Svelte Adapter AWS</a></li>
 				</ul>
 			</details>
 		</li>

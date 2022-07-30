@@ -1,6 +1,7 @@
 ---
 title: Datenschutz
-description: ""
+description:
+layout: misc
 ---
 
 # {title}

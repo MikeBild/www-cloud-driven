@@ -1,0 +1,13 @@
+---
+title: Frontend Engineering (m/w/d)
+description: 
+layout: misc
+---
+
+## {title}
+
+```svelte
+<main class="container">
+	<slot class="misc" />
+</main>
+```

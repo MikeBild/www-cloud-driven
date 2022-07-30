@@ -22,7 +22,7 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_DEFAULT_REGION: 'eu-central-1'
-        AWS_DEFAULT_ACCOUNT: '044086961882'
+        CDK_DEFAULT_REGION: 'eu-central-1'
+        CDK_DEFAULT_ACCOUNT: '044086961882'
     - run: yarn
     - run: yarn build

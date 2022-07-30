@@ -8,7 +8,7 @@ export default {
 	preprocess: [
 		mdsvex({
 			layout: {
-				misc: './src/routes/layout-misc.svelte'				
+				misc: './src/routes/layout-misc.svelte'
 			}
 		}),
 		preprocess()

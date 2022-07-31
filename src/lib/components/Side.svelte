@@ -11,4 +11,8 @@
 		<a href="/speaker">Meet us</a><br />
 		<small>Konferenzen, Meetups und Publikationen wo wir zu finden sind</small>
 	</p>
+	<p>
+		<a href="/projects">Projekte</a><br />
+		<small>Entwicklerwerkzeuge und Bibliotheken</small>
+	</p>
 </aside>

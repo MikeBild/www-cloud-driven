@@ -1,0 +1,11 @@
+{
+  "www-cloud-driven-dynamo": {
+    "ExportsOutputRefDynamoDBTable59784FC027915268": "www-cloud-driven-dynamo-DynamoDBTable59784FC0-W93PGBFP9XAF",
+    "ExportsOutputFnGetAttDynamoDBTable59784FC0ArnFDE6BED0": "arn:aws:dynamodb:eu-central-1:044086961882:table/www-cloud-driven-dynamo-DynamoDBTable59784FC0-W93PGBFP9XAF",
+    "tableName": "www-cloud-driven-dynamo-DynamoDBTable59784FC0-W93PGBFP9XAF"
+  },
+  "www-cloud-driven": {
+    "apiUrl": "mj79b046qh.execute-api.eu-central-1.amazonaws.com",
+    "appUrl": "cloud-driven.mikebild.com"
+  }
+}

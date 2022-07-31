@@ -22,7 +22,7 @@ export class SESStack extends Stack {
 			new PolicyStatement({
 				effect: Effect.ALLOW,
 				actions: ['ses:SendEmail', 'ses:SendRawEmail', 'ses:SendTemplatedEmail'],
-				resources: [`arn:aws:ses:${Stack.of(this).region}:${Stack.of(this).account}:identity/${props.SES_EMAIL_FROM}`]
+				resources: [`arn:aws:ses:${Stack.of(this).region}:${Stack.of(this).account}:identity/${domainName}`]
 			})
 		);
 	}

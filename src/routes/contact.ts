@@ -10,22 +10,33 @@ interface Contact {
 	lastname: string;
 }
 
+export async function GET() {
+	return {
+		status: 200,
+		body: {}
+	};
+}
+
 export async function POST({ request }: RequestEvent) {
 	const { company, email, message, firstname, lastname } = Object.fromEntries(await request.formData());
 	const contact: Contact = { company, email, message, firstname, lastname } as Contact;
 
 	const ses = new AWS.SES({ region: env.AWS_DEFAULT_REGION });
 	await ses.sendEmail(sendEmailParams(contact)).promise();
+
+	const endpoint = new URL(request.headers.get('origin') || '');
+	endpoint.searchParams.append('success', 'true');
+
 	return {
-		status: 201,
-		body: contact
+		headers: { Location: endpoint.toString() },
+		status: 302
 	};
 }
 
 function sendEmailParams(contact: Contact) {
 	return {
 		Destination: {
-			ToAddresses: [env.SES_EMAIL_TO || process.env.SES_EMAIL_TO]
+			ToAddresses: [env.SES_EMAIL_TO || process.env.SES_EMAIL_TO || '']
 		},
 		Message: {
 			Body: {
@@ -43,7 +54,7 @@ function sendEmailParams(contact: Contact) {
 				Data: `News from cloud-driven.dev`
 			}
 		},
-		Source: env.SES_EMAIL_FROM || process.env.SES_EMAIL_FROM
+		Source: env.SES_EMAIL_FROM || process.env.SES_EMAIL_FROM || ''
 	};
 }
 

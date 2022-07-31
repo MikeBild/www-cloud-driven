@@ -16,6 +16,7 @@
 	},
 	"devDependencies": {
 		"dotenv": "16.0.1",
+		"aws-cdk": "1.166.1",
 		"@picocss/pico": "1.5.3",
 		"@playwright/test": "1.24.2",
 		"@sveltejs/adapter-auto": "next",

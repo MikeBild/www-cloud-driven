@@ -16,8 +16,7 @@ export default {
 	kit: {
 		adapter: adapter({
 			autoDeploy: true,
-			FQDN: 'cloud-driven.mikebild.com',
-			stackName: 'www-cloud-driven'
+			cdkProjectPath: `${process.cwd()}/deploy.js`
 		})
 	}
 };

@@ -10,7 +10,7 @@
 					<h2>Kontakt</h2>
 					<h3>Für eine Anfrage können Sie hier mit uns sprechen.</h3>
 				</hgroup>
-				<form>
+				<form method="POST">
 					<input type="text" id="company" name="company" placeholder="Firma" aria-label="Firma" required />
 
 					<div class="grid">
@@ -19,7 +19,7 @@
 					</div>
 					<input type="email" id="email" name="email" placeholder="E-Mail Adresse" aria-label="E-Mail Adresse" required />
 					<textarea id="message" name="message" placeholder="Nachricht" aria-label="Nachricht" required />
-					<button type="submit" onclick="event.preventDefault()">Absenden</button>
+					<button type="submit">Absenden</button>
 				</form>
 			</div>
 		</section>

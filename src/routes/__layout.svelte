@@ -14,6 +14,9 @@
 	<link rel="apple-touch-icon" href="/logo_192.png" />
 	<meta name="msapplication-TileColor" content="#00aba9" />
 	<meta name="theme-color" content="#bee0da" />
+
+	<title>Cloud Driven</title>
+	<meta name="description" content="Cloud Driven" />
 </svelte:head>
 
 <Header />

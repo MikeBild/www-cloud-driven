@@ -17,7 +17,8 @@ export async function POST({ request }: RequestEvent) {
 	const ses = new AWS.SES({ region: env.AWS_DEFAULT_REGION });
 	await ses.sendEmail(sendEmailParams(contact)).promise();
 	return {
-		body: {}
+		status: 201,
+		body: contact
 	};
 }
 

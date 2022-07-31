@@ -182,6 +182,21 @@
     constructs "^3.3.69"
     punycode "^2.1.1"
 
+"@aws-cdk/aws-dynamodb@1.166.1":
+  version "1.166.1"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-dynamodb/-/aws-dynamodb-1.166.1.tgz#ec6b2cff86a9722798adb99eeb3b492b6ea511ed"
+  integrity sha512-eaQCklp19A8lP1BBGIi4gl8rodkRwAwZXm/KkCSdkWimjgpA/P2N1mj9m0Ek2PtrEObGplqi0QK48Emnb1Rk7Q==
+  dependencies:
+    "@aws-cdk/aws-applicationautoscaling" "1.166.1"
+    "@aws-cdk/aws-cloudwatch" "1.166.1"
+    "@aws-cdk/aws-iam" "1.166.1"
+    "@aws-cdk/aws-kinesis" "1.166.1"
+    "@aws-cdk/aws-kms" "1.166.1"
+    "@aws-cdk/aws-lambda" "1.166.1"
+    "@aws-cdk/core" "1.166.1"
+    "@aws-cdk/custom-resources" "1.166.1"
+    constructs "^3.3.69"
+
 "@aws-cdk/aws-ec2@1.166.1":
   version "1.166.1"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-ec2/-/aws-ec2-1.166.1.tgz#ee91167c592a5cc675c612f0461c7c475e041f06"
@@ -291,6 +306,18 @@
     "@aws-cdk/core" "1.166.1"
     "@aws-cdk/cx-api" "1.166.1"
     "@aws-cdk/region-info" "1.166.1"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-kinesis@1.166.1":
+  version "1.166.1"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-kinesis/-/aws-kinesis-1.166.1.tgz#acef600424573b612273f2494501f27f3c940dc7"
+  integrity sha512-98GUiWZ5DorZSKkqkX0SnbyPgux8l3mSllZPzo7fPjVOiePPckp3FFfNmD8UUVAZaXqKUAboHk/zRecg+4Xw9g==
+  dependencies:
+    "@aws-cdk/aws-cloudwatch" "1.166.1"
+    "@aws-cdk/aws-iam" "1.166.1"
+    "@aws-cdk/aws-kms" "1.166.1"
+    "@aws-cdk/aws-logs" "1.166.1"
+    "@aws-cdk/core" "1.166.1"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-kms@1.166.1":
@@ -934,6 +961,11 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
+aws-cdk-ses-domain-identity@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-ses-domain-identity/-/aws-cdk-ses-domain-identity-1.1.0.tgz#0f3dd9d49fe1a85f161d0bb22d408a7a133ef45f"
+  integrity sha512-TaA3lkmYSO/Mc/7zOj6EMfp3hKTHf90OSDdXn7A0EpUZhp9tWHzMdVF9PQwkHMof5AITg0Nt+4s/f6wFRJqPQA==
+
 aws-sdk@^2.1185.0:
   version "2.1185.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1185.0.tgz#157c6a900a9449cb36b37493337cae418e01210d"
@@ -1141,6 +1173,11 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dotenv@16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.1.tgz#8f8f9d94876c35dac989876a5d3a82a267fdce1d"
+  integrity sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"

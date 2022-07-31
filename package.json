@@ -15,9 +15,13 @@
 		"destroy": "destroy"
 	},
 	"devDependencies": {
+		"dotenv": "16.0.1",
 		"@picocss/pico": "1.5.3",
 		"@playwright/test": "1.24.2",
 		"@sveltejs/adapter-auto": "next",
+		"aws-cdk-ses-domain-identity": "1.1.0",
+		"@aws-cdk/aws-dynamodb": "1.166.1",
+		"@aws-cdk/aws-iam": "1.166.1",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "5.31.0",
 		"@typescript-eslint/parser": "5.31.0",

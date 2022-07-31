@@ -1,6 +1,9 @@
 <script>
+	import { page } from '$app/stores';
 	import Hero from '$lib/components/Hero.svelte';
 	import Side from '$lib/components/Side.svelte';
+
+	let hasSubscriptionSuccess = Boolean($page.url.searchParams.get('success'));
 </script>
 
 <Hero />
@@ -58,17 +61,24 @@
 
 <section id="subscribe" aria-label="Subscribe to our newletter">
 	<div class="container">
-		<hgroup>
-			<h2>Nichts mehr Verpassen?</h2>
-			<h3>melde dich für unseren Newsletter an</h3>
-		</hgroup>
+		{#if !hasSubscriptionSuccess}
+			<hgroup>
+				<h2>Nichts mehr Verpassen?</h2>
+				<h3>Melden Sie sich hier für unseren E-Mail Newsletter an.</h3>
+			</hgroup>
 
-		<form class="grid" method="POST">
-			<input type="text" id="firstname" name="firstname" placeholder="Vorname" aria-label="Vorname" required />
-			<input type="email" id="email" name="email" placeholder="E-Mail Adresse" aria-label="E-Mail Adresse" required />
-			<button type="submit">Anmelden</button>
-		</form>
-		<p>Indem Sie sich anmelden, stimmen Sie den Nutzungsbedingungen und der Datenschutzrichtlinie zu.</p>
+			<form class="grid" method="POST">
+				<input type="text" id="firstname" name="firstname" placeholder="Vorname" aria-label="Vorname" required />
+				<input type="email" id="email" name="email" placeholder="E-Mail Adresse" aria-label="E-Mail Adresse" required />
+				<button type="submit">Anmelden</button>
+			</form>
+			<p>Indem Sie sich anmelden, stimmen Sie den Nutzungsbedingungen und der Datenschutzrichtlinie zu.</p>
+		{:else}
+			<hgroup>
+				<h2>Vielen Dank!</h2>
+				<h3>Für Ihre Anmeldung zu unserem E-Mail Newsletter.</h3>
+			</hgroup>
+		{/if}
 	</div>
 </section>
 

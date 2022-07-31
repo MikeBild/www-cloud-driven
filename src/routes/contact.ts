@@ -24,7 +24,7 @@ export async function POST({ request }: RequestEvent) {
 	const ses = new AWS.SES({ region: env.AWS_DEFAULT_REGION });
 	await ses.sendEmail(sendEmailParams(contact)).promise();
 
-	const endpoint = new URL(request.headers.get('origin') || '');
+	const endpoint = new URL(`${request.headers.get('origin')}/contact`);
 	endpoint.searchParams.append('success', 'true');
 
 	return {

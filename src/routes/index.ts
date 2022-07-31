@@ -7,7 +7,10 @@ export async function POST({ request }: RequestEvent) {
 
 	const ddb = new AWS.DynamoDB({ region: env.AWS_DEFAULT_REGION });
 	await ddb
-		.putItem({ TableName: '', Item: AWS.DynamoDB.Converter.marshall({ id: email, type: 'newsletter', firstname }) })
+		.putItem({
+			TableName: env.DBTABLE || process.env.DBTABLE || '',
+			Item: AWS.DynamoDB.Converter.marshall({ id: email, type: 'newsletter', firstname })
+		})
 		.promise();
 
 	return {

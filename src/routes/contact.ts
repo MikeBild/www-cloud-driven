@@ -25,7 +25,7 @@ export async function POST({ request }: RequestEvent) {
 function sendEmailParams(contact: Contact) {
 	return {
 		Destination: {
-			ToAddresses: [env.SES_EMAIL_TO]
+			ToAddresses: [env.SES_EMAIL_TO || process.env.SES_EMAIL_TO]
 		},
 		Message: {
 			Body: {
@@ -43,7 +43,7 @@ function sendEmailParams(contact: Contact) {
 				Data: `News from cloud-driven.dev`
 			}
 		},
-		Source: env.SES_EMAIL_FROM
+		Source: env.SES_EMAIL_FROM || process.env.SES_EMAIL_FROM
 	};
 }
 

@@ -2,6 +2,7 @@ import { fileURLToPath } from 'url';
 import { adapter } from 'sveltekit-adapter-aws';
 import { mdsvex } from 'mdsvex';
 import preprocess from 'svelte-preprocess';
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -9,7 +10,7 @@ export default {
 	preprocess: [
 		mdsvex({
 			layout: {
-				misc: `${fileURLToPath(new URL('.', import.meta.url))}/src/routes/layout-misc.svelte`
+				misc: `${__dirname}/src/routes/layout-misc.svelte`
 			}
 		}),
 		preprocess()
@@ -21,7 +22,7 @@ export default {
 		},
 		adapter: adapter({
 			autoDeploy: true,
-			cdkProjectPath: `${process.cwd()}/deploy.js`
+			cdkProjectPath: `${__dirname}/deploy.js`
 		})
 	}
 };

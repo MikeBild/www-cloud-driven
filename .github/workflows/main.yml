@@ -23,3 +23,6 @@ jobs:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
           CDK_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
           CDK_DEFAULT_ACCOUNT: ${{ secrets.AWS_ACCOUNT }}
+          SES_EMAIL_FROM: contact@mikebild.com
+          SES_EMAIL_TO: mike@mikebild.com
+          FQDN: cloud-driven.mikebild.com

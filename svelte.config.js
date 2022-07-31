@@ -16,10 +16,6 @@ export default {
 		preprocess()
 	],
 	kit: {
-		prerender: {
-			default: true,
-			onError: 'continue'
-		},
 		adapter: adapter({
 			autoDeploy: true,
 			cdkProjectPath: `${__dirname}/deploy.js`

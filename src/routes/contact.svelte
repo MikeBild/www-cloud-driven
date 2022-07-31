@@ -1,7 +1,3 @@
-<script context="module">
-	export let prerender = false;
-</script>
-
 <script>
 	import { page } from '$app/stores';
 	import Side from '$lib/components/Side.svelte';

@@ -1,3 +1,7 @@
+<script context="module">
+	export let prerender = true;
+</script>
+
 <section class="container">
 	<div>
 		<h2>Jobs</h2>

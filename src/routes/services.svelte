@@ -1,3 +1,7 @@
+<script context="module">
+	export let prerender = true;
+</script>
+
 <script>
 	import Side from '$lib/components/Side.svelte';
 </script>

@@ -1,15 +1,11 @@
 import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
 import { config } from 'dotenv';
 import { App } from '@aws-cdk/core';
 import { AWSAdapterStack } from 'sveltekit-adapter-aws';
 import { DynamoStack } from './stacks/dynamo.js';
 import { SESStack } from './stacks/ses.js';
 
-config({ path: resolve(__dirname, '.env') });
+config({ path: `${fileURLToPath(new URL('.', import.meta.url))}/.env` });
 
 const app = new App();
 app.region = process.env.CDK_DEFAULT_REGION;

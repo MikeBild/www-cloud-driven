@@ -1,3 +1,7 @@
+<script context="module">
+	export let prerender = false;
+</script>
+
 <script>
 	import { page } from '$app/stores';
 	import Hero from '$lib/components/Hero.svelte';

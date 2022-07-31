@@ -12,9 +12,9 @@
 			<details role="list" dir="rtl">
 				<summary aria-haspopup="listbox" role="link" class="contrast"><i class="ri-menu-4-fill" /></summary>
 				<ul role="listbox">
-					<li><a href="/blog" target="_blank">Blog</a></li>
-					<li><a href="/contact" target="_blank">Kontakt</a></li>
-					<li><a href="/projects" target="_blank">Projekte</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/contact">Kontakt</a></li>
+					<li><a href="/projects">Projekte</a></li>
 				</ul>
 			</details>
 		</li>

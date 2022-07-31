@@ -1,0 +1,30 @@
+{
+	"short_name": "Cloud-Driven",
+	"name": "Cloud Driven",
+	"start_url": "/",
+	"scope": "/",
+	"icons": [
+		{
+			"src": "logo_512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any"
+		},
+		{
+			"src": "logo_512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		},
+		{
+			"src": "logo_192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		}
+	],
+	"background_color": "#bee0da",
+	"display": "standalone",
+	"theme_color": "#bee0da",
+	"description": "Cloud Driven"
+}

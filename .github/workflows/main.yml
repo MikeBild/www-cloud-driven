@@ -1,28 +1,40 @@
-name: NodeJS CI/CD
+name: AWS-Serverless-Deployment
 
 on:
   push:
     branches: [master]
 
+env:
+  AWS_REGION: 'eu-central-1'
+  AWS_ACCOUNT: '044086961882'
+# permission can be added at job level or workflow level
+permissions:
+  id-token: write
+  contents: read # This is required for actions/checkout
 jobs:
-  build:
+  deployment:
     runs-on: ubuntu-latest
+    env:
+      FQDN: cloud-driven.mikebild.com
+      SES_EMAIL_FROM: cloud-driven@mikebild.com
+      SES_EMAIL_TO: mike@mikebild.com
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Use NodeJS 18.x
-        uses: actions/setup-node@v3
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
-          cache: 'yarn'
-      - run: yarn
-      - run: yarn build
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
-          CDK_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
-          CDK_DEFAULT_ACCOUNT: ${{ secrets.AWS_ACCOUNT }}
-          SES_EMAIL_FROM: contact@mikebild.com
-          SES_EMAIL_TO: mike@mikebild.com
-          FQDN: cloud-driven.mikebild.com
+          node-version: 18
+          cache: 'npm'
+      - name: install dependencies
+        run: |
+          yarn install
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT }}:role/GitHubActionRole
+          role-session-name: serverless-workflows-deployment
+          aws-region: ${{ env.AWS_REGION }}
+      - name: build
+        run: |
+          yarn build
